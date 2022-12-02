@@ -15,8 +15,6 @@ async function simpsonQuote() {
     console.log("There's an error!");
   }
 }
-
-
  function showSimpsonQuote(){
   
   const simpsonQuoteContainer = document.getElementById ("simpsonQuoteContainer");
@@ -32,7 +30,7 @@ console.log(newSimpson[0].quote)
 
  newSimpson.map(quoteObject=> {
   console.log(quoteObject.quote);
-  
+
   const newImgElement = document.createElement("img");
   newImgElement.src = quoteObject.image
   simpsonQuoteContainer.append(newImgElement)
